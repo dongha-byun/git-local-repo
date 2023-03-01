@@ -1,3 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    generate-unique-name: false
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: '{cipher}d0f3bdfe343c0fb6c6de83270164ae953f2db7ddcf5497794d5c5a9909a5e11e'
+
 token:
   expiration_time: 1800000 # 30분 -> 1000 * 60 * 30 = 1800 * 1000 = 1800000
   secret: dev_dong_ha_token_key_must_be_as_long_as_possible_because_of_strong_security
